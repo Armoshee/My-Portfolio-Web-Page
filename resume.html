@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="en">    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="icon" type="image/png" href="images/company-logo.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Background */
+    body {
+      background-image: url('images/micro-web.webp');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding-top: 70px; /* space for fixed nav */
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* center horizontally */
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      background: #007bff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: flex-end; /* align links to right */
+    }
+    nav a {
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-left: 8px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #0056b3;
+    }
+
+    /* Headings */
+    h1 {
+      color: #dddce3;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      color: #ccd7e7;
+    }
+
+    /* Download Button */
+    .download-btn {
+      background:#007bff;
+      color:white;
+      padding:12px 20px;
+      border:none;
+      border-radius:6px;
+      text-decoration:none;
+      font-size:18px;
+      font-weight:bold;
+      display:inline-block;
+      margin: 20px auto;
+    }
+    .download-btn:hover {
+      background:#538ef4;
+    }
+    .download-container {
+      text-align: center;
+    }
+
+    /* Section Boxes */
+    .section-box, .section-box-alt {
+      background-color:#538ef4;
+      border:1px solid white;
+      border-radius:10px;
+      padding:12px;
+      margin:15px auto;
+      max-width: 800px;
+      color: white;
+      text-align: left; /* keep content readable */
+    }
+    .section-box-alt {
+      background-color:#538ef4;
+    }
+
+    /* Skills Grid */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .grid-item {
+      background: white;
+      color: #333;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 20px;
+      padding: 20px;
+      text-align: center;
+      background: #aec4ef;
+      border-radius: 10px;
+      max-width: 900px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>       
+    <a href="index.html">Home</a> 
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a> 
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Resume Header -->
+  <h1>Resume</h1>
+  <p>Accounts executive | Accounts payable & receivable | LC & bill discount</p>
+
+  <!-- Download Button -->
+  <div class="download-container">
+    <a href="resume.pdf" download class="download-btn">⬇ Download Resume (PDF)</a>
+  </div>
+
+  <!-- Experience Section -->
+  <section>
+    <header class="section-box">
+      <h2>Experience</h2>
+    </header>
+
+    <div class="section-box">
+      <p><strong>Accounts Executive</strong> - Malathi Engineer Works (2014 - 2017)</p>
+      <p>Bill Passing: Booking purchase bills in ERP software</p>
+      <p>Accounts Payable & Receivable: Bank & cash payments</p>
+      <p>Record maintenance of accounts payable and receivable</p>
+      <p>LC and Bill Discounting</p>
+      <p>BRS (Bank Reconciliation Statement)</p>
+      <p>Invoice Process</p>
+    </div>
+
+    <div class="section-box">
+      <p><strong>Senior Accounts Executive</strong> - Hussain Tools and Hardware (2017 - 2018)</p>
+      <p>Bill Passing: Booking purchase bills in ERP software</p>
+      <p>Accounts Payable & Receivable: Bank & cash payments</p>
+      <p>Record maintenance of accounts payable and receivable</p>
+      <p>LC and Bill Discounting</p>
+      <p>BRS (Bank Reconciliation Statement)</p>
+      <p>Invoice Process</p>
+    </div>
+
+    <div class="section-box-alt">
+      <p><strong>Senior Accounts Executive</strong> - Samunnati Agro Solutions Pvt Ltd (2020 - 2022)</p>
+      <p>Trade process</p>
+      <p>Purchase Order</p>
+      <p>Goods Receipt Note</p>
+      <p>Payment</p>
+      <p>TAT & Escalation matrix</p>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+<section>
+  <header class="section-box">
+    <h2>Education</h2>
+  </header>
+
+  <div class="section-box">
+    <table class="education-table">
+      <thead>
+        <tr>
+          <th>Degree</th>
+          <th>Institution</th>
+          <th>Year</th>
+          <th>CGPA / Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      
+        <tr>
+          <td>B.com</td>
+          <td>SHREE CHANDRA PRABHU JAIN COLLEGE </td>
+          <td>2011–2014</td>
+          <td>68%</td>
+        </tr>
+        <tr>
+          <td>SSC</td>
+          <td>Govt Girls Hr Sec School</td>
+          <td>2010–2011</td>
+          <td>52%</td>
+        </tr>
+        <tr>
+          <td>HSC</td>
+          <td>Govt Girls Hr Sec School</td>
+          <td>2009–20</td>
+          <td>57%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+  <!-- Skills Section -->
+  <footer>
+    <h2 style="color: rgb(88, 151, 247);">Technical</h2>
+    <div class="grid-container">
+      <div class="grid-item">HTML</div>
+      <div class="grid-item">JavaScript</div>
+      <div class="grid-item">CSS</div>
+      <div class="grid-item">Microsoft Excel</div>
+      <div class="grid-item">Git</div>
+      <div class="grid-item">GitHub</div>
+      <div class="grid-item">AWS</div>
+    </div>
+
+    <h2 style="color: rgb(88, 151, 247); margin-top:20px;">Non-Technical</h2>
+    <div class="grid-container">
+      <div class="grid-item">Tally</div>
+      <div class="grid-item">Oracle</div>
+      <div class="grid-item">Accounts Payable</div>
+      <div class="grid-item">Accounts Receivable</div>
+      <div class="grid-item">Invoice Process</div>
+      <div class="grid-item">Supplier Payment</div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222; /* brighter text */
+  min-height: 100vh;
+  background: #f9fbfd; /* very light background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px; /* space for fixed nav */
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: #0066ff; /* bright royal blue */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+nav a {
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+nav a:hover {
+  background-color: #00e6e6; /* aqua hover */
+  color: #003366;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  color: #003366; /* deep blue */
+  text-align: center;
+  margin-bottom: 10px;
+}
+p.subtitle {
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Download Button */
+.download-container {
+  text-align: center;
+  margin: 20px 0;
+}
+.download-btn {
+  background:#00e6e6; /* aqua */
+  color:#003366;
+  padding:12px 20px;
+  border:none;
+  border-radius:6px;
+  text-decoration:none;
+  font-size:18px;
+  font-weight:bold;
+  display:inline-block;
+}
+.download-btn:hover {
+  background:#0066ff; /* royal blue */
+  color:#fff;
+}
+
+/* Section Boxes */
+.section-box, .section-box-alt {
+  background-color:#fff;
+  border:1px solid #e1e7f0;
+  border-radius:10px;
+  padding:15px;
+  margin:15px auto;
+  max-width: 800px;
+  color: #222;
+  text-align: left;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+.section-box-alt {
+  background-color:#f0f6ff;
+}
+
+/* Education Table */
+.education-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  text-align: center;
+  background: #79afe6;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.education-table th, .education-table td {
+  padding: 12px;
+  border: 1px solid #e1e7f0;
+}
+.education-table th {
+  background: #0066ff;
+  color: white;
+  font-weight: bold;
+}
+.education-table tr:nth-child(even) {
+  background: #79afe6;
+}
+
+/* Skills Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+.grid-item {
+  background: #fff;
+  color: #003366;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  background: #0066ff;
+  color: white;
+  border-radius: 10px;
+  max-width: 900px;
+}

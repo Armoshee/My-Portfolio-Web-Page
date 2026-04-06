@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="icon" type="image/png" href="images/company-logo.jpg">
+  <link rel="stylesheet" href="style.css">
+
+  <title>My Web Site</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(rgba(244, 244, 244, 0.88), rgba(244, 244, 244, 0.88)),
+                  url('images/micro-web.webp') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      background: #333; color: #fff; padding: 1rem 2rem;
+      display: flex; justify-content: flex-end; align-items: center;
+    }
+    .navbar { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .navbar a {
+      color: #ffffff; font-weight: bold; padding: 10px 12px;
+      border-radius: 4px; transition: background-color 0.3s, color 0.3s;
+    }
+    .navbar a:hover { background-color: #ff9800; color: #ffffff; }
+
+    .hero {
+      background: url('images/micro-web.webp') no-repeat center center/cover;
+      color: #e5bebe; text-align: center; padding: 5rem 2rem;
+    }
+    .hero h2 {
+      font-size: 2.5rem; margin-bottom: 1rem;
+      background: rgba(0, 0, 0, 0.45); display: inline-block;
+      padding: 0.7rem 1.2rem; border-radius: 10px;
+    }
+    .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+    .btn { background: #007bff; color: white; padding: 0.7rem 1.5rem; border-radius: 5px; border: none; }
+    .btn:hover { background: #0056d2; }
+
+    .about-section {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+    .about-card {
+      background: rgba(255, 255, 255, 0.94);
+      border-radius: 18px;
+      padding: 2rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+    .about-copy h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #1f2d3d;
+    }
+    .about-copy p {
+      margin-bottom: 1rem;
+      color: #4b5563;
+      font-size: 1rem;
+    }
+    .about-highlights {
+      background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%);
+      border-radius: 14px;
+      padding: 1.5rem;
+      border: 1px solid #dbe6ff;
+    }
+    .about-highlights h4 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: #0f172a;
+    }
+    .about-highlights ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.85rem;
+    }
+    .about-highlights li {
+      background: white;
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+      color: #334155;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+    }
+
+    .projects-section {
+      max-width: 1100px;
+      margin: 0 auto 2rem;
+      padding: 0 2rem;
+    }
+    .section-title {
+      font-size: 2rem;
+      color: #1f2d3d;
+      margin-bottom: 0.75rem;
+      text-align: center;
+    }
+    .section-intro {
+      text-align: center;
+      color: #4b5563;
+      margin-bottom: 1.75rem;
+    }
+
+    .container {
+      max-width: 1100px; margin: auto; padding: 2rem;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.94); padding: 1rem; border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card img { max-width: 100%; border-radius: 5px; }
+    .card h3 { margin: 1rem 0 0.5rem; }
+    .card p { color: #4b5563; }
+
+    footer { background: rgba(8, 71, 220, 0.95); color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    footer img { vertical-align: middle; }
+
+    @media (max-width: 768px) {
+      header { flex-direction: column; align-items: flex-start; }
+      .navbar { width: 100%; justify-content: space-between; }
+      .about-card { grid-template-columns: 1fr; padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Welcome to My Website</h2>
+    <p>Clean, responsive, and ready to customize.</p>
+    <a href="contact.html" class="btn">Get Started</a>
+  </section>
+
+  <section class="about-section">
+    <div class="about-card">
+      <div class="about-copy">
+        <h3>About Myself</h3>
+        <p>I am Muhaseena A, a motivated learner who is building a strong foundation in web development and digital projects. I enjoy creating clean pages, improving user experience, and turning simple ideas into practical websites.</p>
+        <p>This portfolio represents my work, learning journey, and interest in creating responsive and professional web pages. I focus on improving my technical skills step by step while keeping the design simple, clear, and useful.</p>
+        <p>I am especially interested in front-end development, project building, and presenting my skills in a way that is easy for others to understand. My goal is to continue learning, grow as a developer, and contribute to meaningful work.</p>
+      </div>
+      <div class="about-highlights">
+        <h4>Quick Highlights</h4>
+        <ul>
+          <li>Focused on responsive and user-friendly website design</li>
+          <li>Interested in HTML, CSS, JavaScript, and portfolio projects</li>
+          <li>Building practical experience through personal web development work</li>
+          <li>Always learning and improving through hands-on practice</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+
+  
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="https://www.instagram.com/ray_aan2020/" target="_blank">
+      <img src="images/insta-logo.png" alt="Instagram Icon" style="width: 50px; height: 45px;">
+    </a>
+    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+      <img src="images/email-pic.png" alt="Gmail Icon" style="width: 40px; height: 35px;">
+    </a>
+    <a href="https://www.linkedin.com/feed/" target="_blank">
+      <img src="images/linkedin-p.jpg" alt="LinkedIn Icon" style="width: 40px; height: 35px;">
+    </a>
+    <a href="https://github.com/Armoshee" target="_blank">
+      <img src="images/git-hub.png" alt="GitHub Icon" style="width: 40px; height: 35px;">
+    </a>
+    <p>&copy; 2026 My Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
