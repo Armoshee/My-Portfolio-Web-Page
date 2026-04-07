@@ -43,6 +43,8 @@
       gap: 0.6rem;
       align-items: center;
       flex-wrap: wrap;
+      justify-content: flex-end;
+      margin: 0;
     }
     .navbar a {
       color: #ffffff;
@@ -57,7 +59,7 @@
     .navbar a:hover { background-color: #ff9800; color: #ffffff; }
 
     .hero {
-      background: url('images/micro-web.webp') no-repeat center center/cover;
+      background: url('micro-web.webp') no-repeat center center/cover;
       color: #e5bebe; text-align: center; padding: 5rem 2rem;
     }
     .hero h2 {
@@ -75,35 +77,36 @@
       padding: 0 2rem;
     }
     .about-card {
-      background: rgba(255, 255, 255, 0.94);
+      background: rgba(9, 36, 84, 0.82);
       border-radius: 18px;
       padding: 2rem;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
       display: grid;
       grid-template-columns: 1.4fr 1fr;
       gap: 2rem;
       align-items: start;
+      border: 1px solid rgba(255,255,255,0.12);
     }
     .about-copy h3 {
       font-size: 2rem;
       margin-bottom: 1rem;
-      color: #1f2d3d;
+      color: #e0eeff;
     }
     .about-copy p {
       margin-bottom: 1rem;
-      color: #4b5563;
+      color: #c8d9f0;
       font-size: 1rem;
     }
     .about-highlights {
-      background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%);
+      background: rgba(0, 80, 180, 0.45);
       border-radius: 14px;
       padding: 1.5rem;
-      border: 1px solid #dbe6ff;
+      border: 1px solid rgba(255,255,255,0.18);
     }
     .about-highlights h4 {
       font-size: 1.1rem;
       margin-bottom: 1rem;
-      color: #0f172a;
+      color: #e0eeff;
     }
     .about-highlights ul {
       list-style: none;
@@ -113,11 +116,11 @@
       gap: 0.85rem;
     }
     .about-highlights li {
-      background: white;
+      background: rgba(255, 255, 255, 0.1);
       border-radius: 10px;
       padding: 0.85rem 1rem;
-      color: #334155;
-      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+      color: #dce9ff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     .projects-section {
@@ -165,7 +168,6 @@
         padding: 1rem;
       }
       .navbar {
-        width: 100%;
         flex-direction: row;
         justify-content: flex-end;
         flex-wrap: wrap;
