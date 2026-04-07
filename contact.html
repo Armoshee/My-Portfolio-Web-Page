@@ -148,18 +148,19 @@
     button {
       width: 100%;
       padding: 12px;
-      background: linear-gradient(135deg, #667eea 0%, #411cba 100%);
+      background: #007bff;
       color: white;
       border: none;
       border-radius: 6px;
       font-size: 16px;
       font-weight: 600;
       cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
       margin-top: 10px;
     }
 
     button:hover:not(:disabled) {
+      background: #0056b3;
       transform: translateY(-2px);
       box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
     }
