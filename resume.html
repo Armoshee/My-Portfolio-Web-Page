@@ -9,15 +9,13 @@
   <style>
     /* Background */
     body {
-      background-image: url('micro-web.webp');
+      background-image: url('images/micro-web.webp');
       background-size: cover;
       background-position: center;
       font-family: Arial, sans-serif;
       margin: 0;
       padding-top: 70px; /* space for fixed nav */
-      display: flex;
-      flex-direction: column;
-      align-items: center; /* center horizontally */
+      display: block;
     }
 
     /* Navigation */
@@ -30,6 +28,7 @@
       padding: 10px 20px;
       display: flex;
       justify-content: flex-end; /* align links to right */
+      z-index: 1000;
     }
     nav a {
       color: white;
@@ -49,13 +48,14 @@
       color: #dddce3;
       text-align: center;
       width: min(1000px, 92vw);
-      margin: 0 auto;
+      margin: 0 auto 8px;
     }
-    p {
+
+    .resume-subtitle {
       text-align: center;
       color: #ccd7e7;
       width: min(1000px, 92vw);
-      margin: 0 auto;
+      margin: 0 auto 8px;
     }
 
     /* Download Button */
@@ -82,7 +82,7 @@
 
     section {
       width: min(1000px, 92vw);
-      margin: 0 auto;
+      margin: 0 auto 14px;
     }
 
     /* Section Boxes */
@@ -90,14 +90,29 @@
       background-color:#538ef4;
       border:1px solid white;
       border-radius:10px;
-      padding:12px;
+      padding:16px;
       margin:15px auto;
-      max-width: 800px;
+      max-width: none;
+      width: 100%;
       color: white;
       text-align: left; /* keep content readable */
     }
     .section-box-alt {
       background-color:#538ef4;
+    }
+
+    .section-box p,
+    .section-box-alt p {
+      margin: 0 0 4px;
+      width: auto;
+      text-align: left;
+      color: #ffffff;
+    }
+
+    .section-box h2 {
+      margin: 0;
+      text-align: left;
+      color: #ffffff;
     }
 
     /* Skills Grid */
@@ -124,7 +139,7 @@
       text-align: center;
       background: #aec4ef;
       border-radius: 10px;
-      width: min(900px, 92vw);
+      width: min(1000px, 92vw);
       margin-left: auto;
       margin-right: auto;
     }
@@ -141,7 +156,7 @@
 
   <!-- Resume Header -->
   <h1>Resume</h1>
-  <p>Accounts executive | Accounts payable & receivable | LC & bill discount</p>
+  <p class="resume-subtitle">Accounts executive | Accounts payable & receivable | LC & bill discount</p>
 
   <!-- Download Button -->
   <div class="download-container">
