@@ -106,8 +106,8 @@
 
     /* Section Boxes */
     .section-box, .section-box-alt {
-      background-color:#538ef4;
-      border:1px solid white;
+      background: linear-gradient(135deg, rgba(14, 42, 92, 0.92), rgba(18, 95, 180, 0.78));
+      border:1px solid rgba(170, 220, 255, 0.45);
       border-radius:10px;
       padding:16px;
       margin:15px auto;
@@ -117,7 +117,7 @@
       text-align: left; /* keep content readable */
     }
     .section-box-alt {
-      background-color:#538ef4;
+      background: linear-gradient(135deg, rgba(0, 118, 199, 0.8), rgba(0, 183, 235, 0.68));
     }
 
     .section-box p,
@@ -139,6 +139,10 @@
       width: 100%;
       border-collapse: collapse;
       table-layout: fixed;
+      background: rgba(12, 47, 102, 0.82);
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba(170, 220, 255, 0.4);
     }
 
     .education-table th,
@@ -151,9 +155,15 @@
     }
 
     .education-table thead th {
+      background: rgba(0, 161, 255, 0.88);
       font-size: 1.05rem;
       font-weight: 700;
       border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+      color: #ffffff;
+    }
+
+    .education-table tbody td {
+      background: rgba(43, 93, 153, 0.88);
     }
 
     .education-table tbody tr:last-child td {
@@ -205,13 +215,14 @@
       margin-top: 10px;
     }
     .grid-item {
-      background: white;
-      color: #333;
+      background: rgba(21, 92, 170, 0.82);
+      color: #f1f9ff;
       padding: 10px;
       border-radius: 6px;
       text-align: center;
       font-weight: bold;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+      border: 1px solid rgba(170, 220, 255, 0.42);
     }
 
     /* Footer */
@@ -219,8 +230,9 @@
       margin-top: 20px;
       padding: 20px;
       text-align: center;
-      background: #aec4ef;
+      background: linear-gradient(135deg, rgba(14, 42, 92, 0.92), rgba(18, 95, 180, 0.78));
       border-radius: 10px;
+      border: 1px solid rgba(170, 220, 255, 0.45);
       width: min(1000px, 92vw);
       margin-left: auto;
       margin-right: auto;
@@ -326,7 +338,7 @@
 
   <!-- Skills Section -->
   <footer>
-    <h2 style="color: rgb(6, 32, 103);">Technical</h2>
+    <h2 style="color: rgb(226, 239, 240);">Technical</h2>
     <div class="grid-container">
       <div class="grid-item">HTML</div>
       <div class="grid-item">JavaScript</div>
@@ -337,7 +349,7 @@
       <div class="grid-item">AWS</div>
     </div>
 
-    <h2 style="color: rgb(6, 32, 103); margin-top:20px;">Non-Technical</h2>
+    <h2 style="color: rgb(226, 239, 240); margin-top:20px;">Non-Technical</h2>
     <div class="grid-container">
       <div class="grid-item">Tally</div>
       <div class="grid-item">Oracle</div>
