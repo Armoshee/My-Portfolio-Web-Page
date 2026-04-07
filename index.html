@@ -19,17 +19,40 @@
       background: url('micro-web.webp') no-repeat center center fixed;
       background-size: cover;
       color: #333;
+      padding-top: 78px;
     }
     a { text-decoration: none; color: inherit; }
 
     header {
-      background: #333; color: #fff; padding: 1rem 2rem;
-      display: flex; justify-content: flex-end; align-items: center;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      background: rgba(9, 36, 84, 0.9);
+      color: #fff;
+      padding: 0.85rem 1.25rem;
+      z-index: 1000;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
     }
-    .navbar { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      gap: 0.6rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
     .navbar a {
-      color: #ffffff; font-weight: bold; padding: 10px 12px;
-      border-radius: 4px; transition: background-color 0.3s, color 0.3s;
+      color: #ffffff;
+      font-weight: bold;
+      padding: 10px 14px;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s;
+      text-align: center;
+      min-width: 90px;
+      background: #007bff;
     }
     .navbar a:hover { background-color: #ff9800; color: #ffffff; }
 
@@ -132,8 +155,25 @@
     footer img { vertical-align: middle; }
 
     @media (max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; }
-      .navbar { width: 100%; justify-content: space-between; }
+      body { padding-top: 92px; }
+      header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        border-radius: 0;
+        width: 100%;
+        padding: 1rem;
+      }
+      .navbar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+      }
+      .navbar a {
+        min-width: auto;
+        flex: 0 1 auto;
+      }
       .about-card { grid-template-columns: 1fr; padding: 1.5rem; }
     }
   </style>
