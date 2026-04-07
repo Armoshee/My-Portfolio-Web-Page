@@ -26,7 +26,8 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       position: relative;
       isolation: isolate;
-      background: transparent;
+      background: url('images/micro-web.webp') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -35,12 +36,11 @@
     }
 
     body::before {
-      content: '';
+      content: none;
       position: fixed;
       inset: 0;
       background:
-        linear-gradient(rgba(66, 85, 160, 0.58), rgba(88, 55, 130, 0.58)),
-        url('images/micro-web.webp') no-repeat center center;
+        url('micro-web.webp') no-repeat center center;
       background-size: cover;
       z-index: -1;
     }
@@ -148,7 +148,7 @@
     button {
       width: 100%;
       padding: 12px;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: linear-gradient(135deg, #667eea 0%, #411cba 100%);
       color: white;
       border: none;
       border-radius: 6px;
