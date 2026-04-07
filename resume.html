@@ -115,6 +115,69 @@
       color: #ffffff;
     }
 
+    /* Education Table */
+    .education-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    .education-table th,
+    .education-table td {
+      padding: 10px 8px;
+      text-align: center;
+      vertical-align: top;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+      color: #ffffff;
+    }
+
+    .education-table thead th {
+      font-size: 1.05rem;
+      font-weight: 700;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    }
+
+    .education-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .education-table th:nth-child(1),
+    .education-table td:nth-child(1) {
+      width: 14%;
+    }
+
+    .education-table th:nth-child(2),
+    .education-table td:nth-child(2) {
+      width: 46%;
+    }
+
+    .education-table th:nth-child(3),
+    .education-table td:nth-child(3) {
+      width: 18%;
+      white-space: nowrap;
+    }
+
+    .education-table th:nth-child(4),
+    .education-table td:nth-child(4) {
+      width: 22%;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 700px) {
+      .education-table th,
+      .education-table td {
+        padding: 8px 6px;
+        font-size: 0.9rem;
+      }
+
+      .education-table th:nth-child(3),
+      .education-table td:nth-child(3),
+      .education-table th:nth-child(4),
+      .education-table td:nth-child(4) {
+        white-space: normal;
+      }
+    }
+
     /* Skills Grid */
     .grid-container {
       display: grid;
@@ -233,7 +296,7 @@
         <tr>
           <td>HSC</td>
           <td>Govt Girls Hr Sec School</td>
-          <td>2009–20</td>
+          <td>2009–2010</td>
           <td>57%</td>
         </tr>
       </tbody>
